@@ -40,32 +40,4 @@ public class UTSYudisium10 {
             pesan = "Ditolak: syarat administrasi "
                     + "(kompen/perpustakaan) belum terpenuhi";
 
-        // Syarat akademik
-        } else if (sks < minSks || ipk < 2.00) {
-            pesan = "Ditolak: syarat akademik "
-                    + "(SKS/IPK) belum terpenuhi";
-
-        // Predikat kelulusan
-        } else {
-            String predikat;
-
-            if (ipk > 3.50 && semester <= batasSemester
-                    && !mengulang) {
-                predikat = "Dengan Pujian";
-            } else if (ipk > 3.00) {
-                predikat = "Sangat Memuaskan";
-            } else if (ipk >= 2.76) {
-                predikat = "Memuaskan";
-            } else {
-                predikat = "Cukup";
-            }
-
-            pesan = "Lulus yudisium " + jenjang
-                    + " dengan predikat " + predikat;
-        }
-
-        System.out.println(pesan);
-
-        sc.close();
-    }
-}
+        
